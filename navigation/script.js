@@ -76,3 +76,33 @@ jQuery(document).ready(function($){
 //         }
 //     })
 // });
+
+
+
+// oncroll but not working
+// $(document).ready(function () {
+//     var sectionPositions = [];
+//     $('section').each(function () {
+//         sectionPositions.push($(this).offset().top - 50); // Adjusted offset for better accuracy
+//     });
+
+//     $(window).scroll(function () {
+//         var scrollPosition = $(window).scrollTop();
+
+//         for (var i = 0; i < sectionPositions.length; i++) {
+//             if (scrollPosition >= sectionPositions[i] && scrollPosition < sectionPositions[i] + $('section').eq(i).height()) {
+//                 $('#navbarSupportedContent>ul>li').removeClass('active');
+//                 $('#navbarSupportedContent>ul>li').eq(i).addClass('active');
+//                 break;
+//             }
+//         }
+//     });
+
+//     $('#navbarSupportedContent>ul>li>a').on('click', function (e) {
+//         e.preventDefault();
+//         var targetSection = $($(this).attr('href'));
+//         $('html, body').animate({
+//             scrollTop: targetSection.offset().top
+//         }, 800);
+//     });
+// });

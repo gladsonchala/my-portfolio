@@ -5,138 +5,578 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gemechis Chala</title>
+
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+  <!-- CSS Libraries -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Services Cards -->
+  <link rel="stylesheet" href="projects-cards/styles.css">
+
   <!-- For Nav Bar -->
-
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
+  <link rel="stylesheet" href="navigation/styles.css" />
   <!-- --------------- ------------ -->
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="navigation/styles.css" />
+  <link rel="stylesheet" href="css/hero.css">
 </head>
 
 <body>
-  <!-- NAVIGATION SECTION -->
-  <nav class="navbar navbar-expand-custom navbar-mainbg">
-    <a class="navbar-brand navbar-logo" href="#">Gemechis</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <i class="fas fa-bars text-white"></i>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <div class="hori-selector">
-          <div class="left"></div>
-          <div class="right"></div>
-        </div>
-        <li class="nav-item active">
-          <a class="nav-link" href="#dashboard"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#bio"><i class="far fa-user"></i>Bio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#portfolio"><i class="fas fa-briefcase"></i>Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#elevator-pitch"><i class="fas fa-rocket"></i>Elevator Pitch</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact"><i class="far fa-envelope"></i>Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#testimonials"><i class="fas fa-star"></i>Testimonials</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#services"><i class="fas fa-cogs"></i>Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#blog"><i class="far fa-file-alt"></i>Blog</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#social-media"><i class="fab fa-instagram"></i>Social Media</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#resume"><i class="fas fa-file-download"></i>Resume</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
+  <!--
+      - #Background Animation
+    -->
 
   <div id="fireflies-container"></div>
   <div id="cursor"></div>
   <div class="content-container">
-    <!-- Sections For My Portfolio -->
 
-    <section id="dashboard" class="content-section">
-      <h2>Dashboard Section</h2>
-      <!-- Dashboard content -->
-      <p>Lamet consectetur adipisicing elit. Ea perferendis adipisci unde ipsum error hic dolorum omnis, ipsam quos
-        fugit mollitia, illum dicta! Amet quasi est veniam quae qui dignissimos molestiae explicabo deleniti
-        perspiciatis rerum ipsa dolor cum, eos pariatur id ratione harum sed fugit tempore? Recusandae eligendi itaque
-        optio reprehenderit animi unde. Doloremque commodi temporibus exercitationem veritatis aliquid voluptatibus,
-        dolorum earum! Eligendi temporibus, voluptate dolore repudiandae tenetur natus dolorum vel, modi doloribus alias
-        ipsam repellat excepturi perferendis animi quod? Ad illo quis quam ut beatae laboriosam sed ipsum, tempora
-        harum. A, obcaecati. Culpa eum ea necessitatibus debitis nostrum alias!</p>
-      <p>Lorem iit amet consectetur adipisicing elit. Ea perferendis adipisci unde ipsum error hic dolorum omnis, ipsam
-        quos fugit mollitia, illum dicta! Amet quasi est veniam quae qui dignissimos molestiae explicabo deleniti
-        perspiciatis rerum ipsa dolor cum, eos pariatur id ratione harum sed fugit tempore? Recusandae eligendi itaque
-        optio reprehenderit animi unde. Doloremque commodi temporibus exercitationem veritatis aliquid voluptatibus,
-        dolorum earum! Eligendi temporibus, voluptate dolore repudiandae tenetur natus dolorum vel, modi doloribus alias
-        ipsam repellat excepturi perferendis animi quod? Ad illo quis quam ut beatae laboriosam sed ipsum, tempora
-        harum. A, obcaecati. Culpa eum ea necessitatibus debitis nostrum alias!</p>
+
+    <!--
+      - #Header And Navigation
+    -->
+
+    <header>
+      <!-- NAVIGATION SECTION -->
+      <nav class="navbar navbar-expand-custom navbar-mainbg">
+        <a class="navbar-brand navbar-logo" href="#">Gemechis</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars text-white"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <div class="hori-selector">
+              <div class="left"></div>
+              <div class="right"></div>
+            </div>
+            <li class="nav-item active">
+              <a class="nav-link" href="#dashboard"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-me"><i class="far fa-user"></i>About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio"><i class="fas fa-briefcase"></i>Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#elevator-pitch"><i class="fas fa-rocket"></i>Elevator Pitch</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials"><i class="fas fa-star"></i>Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services"><i class="fas fa-cogs"></i>Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/blog"><i class="far fa-file-alt"></i>Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#documents"><i class="fas fa-file-download"></i>Documents</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-me"><i class="far fa-envelope"></i>Contact Me</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+
+
+    <!--  Sections For My Portfolio -->
+
+
+    <!--
+      - #dashboard
+    -->
+
+    <section id="dashboard" class="hero content-section">
+      <div class="section-content">
+        <!-- Hero Start -->
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="col-sm-12 col-md-6">
+              <div class="hero-content">
+                <div class="hero-text">
+                  <div>
+                    <h2 style="margin-left: 8px;">I'm</h2>
+                  </div>
+                  <h1 style="color: aqua;">Gemechis Chala</h1>
+                  <div style="height: 50px;">
+                    <h2 class="typed-text"></h2>
+                  </div>
+                </div>
+                <div class="hero-btn">
+                  <a class="btn" href="">Hire Me</a>
+                  <a class="btn" href="">Contact Me</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 d-none d-md-block">
+              <div class="hero-image">
+                <img src="https://smartslider3.com/wp-content/uploads/slider560/portfolio.png" alt="Hero Image">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Hero End -->
+      </div>
     </section>
 
-    <section id="bio" class="content-section">
-      <h2>Bio/About Me</h2>
-      <p>Short and to the point introduction about yourself, your background, skills, and experience.</p>
+
+    <!--
+      - #About Me
+    -->
+
+    <section id="about-me" class="content-section">
+      <div class="section-content">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>About Me</h2>
+            <p>Welcome to my portfolio! I am Gemechis Chala, a passionate and dedicated web developer with expertise in
+              HTML, CSS, and JavaScript. I specialize in building responsive and user-friendly websites that provide a
+              seamless user experience.</p>
+            <p>With a keen eye for design and attention to detail, I create visually appealing and functional websites
+              that meet clients' and users' needs. I stay up-to-date with the latest web development trends and
+              technologies to deliver high-quality solutions.</p>
+          </div>
+          <div class="col-md-6">
+            <img src="favicon.png" alt="Image">
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="portfolio" class="content-section">
-      <h2>Portfolio/Work Samples</h2>
-      <p>Showcasing a selection of your best work, projects, or accomplishments.</p>
+
+    <!--
+      - #POrtfolio
+    -->
+
+    <style>
+      /* Portfolio Section Styles */
+      #portfolio {
+        padding: 80px 0;
+        background-color: #1e1964ab;
+        color: #fff;
+        /* White text color */
+        text-align: center;
+      }
+
+      #portfolio .section-content {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      #portfolio h2 {
+        font-size: 36px;
+        margin-bottom: 30px;
+      }
+
+      #portfolio p {
+        font-size: 18px;
+        margin-bottom: 60px;
+      }
+
+      /* Portfolio Item Styles */
+      .portfolio-item {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 30px;
+      }
+
+      .portfolio-item .item {
+        width: 300px;
+        margin: 10px;
+        background-color: #283747;
+        /* Dark blue background */
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        /* Soft box shadow */
+        transition: transform 0.3s ease;
+      }
+
+      .portfolio-item .item:hover {
+        transform: translateY(-5px);
+      }
+
+      .portfolio-item .item img {
+        width: 100%;
+        height: 200px;
+        /* Adjust height as needed */
+        object-fit: cover;
+        border-radius: 10px 10px 0 0;
+      }
+
+      .portfolio-item .item .item-content {
+        padding: 20px;
+      }
+
+      .portfolio-item .item h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #fff;
+        /* White text color */
+      }
+
+      .portfolio-item .item p {
+        font-size: 16px;
+        margin-bottom: 20px;
+        color: #ccc;
+        /* Light gray text color */
+      }
+    </style>
+
+    <section id="portfolio">
+      <div class="section-content">
+        <h2>Portfolio/Work Samples</h2>
+        <p>Showcasing a selection of your best work, projects, or accomplishments.</p>
+
+        <div class="portfolio-item">
+          <div class="item">
+            <img src="portfolio-image-1.jpg" alt="Portfolio Image 1">
+            <div class="item-content">
+              <h3>Project 1</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="portfolio-image-2.jpg" alt="Portfolio Image 2">
+            <div class="item-content">
+              <h3>Project 2</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="portfolio-image-3.jpg" alt="Portfolio Image 3">
+            <div class="item-content">
+              <h3>Project 3</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="elevator-pitch" class="content-section">
+
+    <!--
+      - #Elevator-pitch
+    -->
+
+    <style>
+      /* Elevator Pitch Section */
+      #elevator-pitch {
+        background-color: #f2f2f2;
+        padding: 50px;
+        text-align: center;
+      }
+
+      #elevator-pitch h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      .video-placeholder {
+        margin-bottom: 30px;
+      }
+
+      .video-placeholder iframe {
+        width: 100%;
+        height: 400px;
+        border: none;
+      }
+
+      #elevator-pitch p {
+        font-size: 18px;
+        color: #666;
+      }
+    </style>
+
+    <section id="elevator-pitch" class="content-section"></section>
+    <div class="section-content">
       <h2>Elevator Pitch</h2>
-      <p>Placeholder for your clear, impactful, and memorable elevator pitch highlighting your background, skills, value
-        proposition, and ask.</p>
+      <div class="video-placeholder">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/TALwI3J4asY?si=3jBqUyyD_CzuKg78"
+          frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
     </section>
 
-    <section id="contact" class="content-section">
-      <h2>Contact Information</h2>
-      <p>Include an email address or a contact form for potential employers to easily get in touch with you.</p>
-    </section>
+
+
+    <!--
+      - #Testimonials
+    -->
 
     <section id="testimonials" class="content-section">
-      <h2>Testimonials/Recommendations</h2>
-      <p>Positive feedback or testimonials from clients, colleagues, or mentors, adding credibility to your work.</p>
+      <div class="section-content">
+        <h2>Testimonials/Recommendations</h2>
+        <div class="wrapper">
+          <div class="card">
+            <img src="./projects-cards/empops-logo.png" width="100px" height="100px">
+            <br>
+            <h4>CSS GRADIENTS</h4>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nulla labore nemo quas omnis eum?</p>
+          </div>
+          <div class="card">
+            <img src="./projects-cards/empops-logo.png" width="100px" height="100px">
+            <br>
+            <h4>CSS GRADIENTS</h4>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nulla labore nemo quas omnis eum?</p>
+          </div>
+          <div class="card">
+            <img src="./projects-cards/empops-logo.png" width="100px" height="100px">
+            <br>
+            <h4>CSS GRADIENTS</h4>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nulla labore nemo quas omnis eum?</p>
+          </div>
+        </div>
+      </div>
     </section>
+
+
+    <!--
+      - #Services
+    -->
 
     <section id="services" class="content-section">
-      <h2>Services/Expertise</h2>
-      <p>List of specific services you offer or your areas of expertise, making it clear what you can provide to
-        potential clients.</p>
+      <div class="section-content">
+        <h2>Services/Expertise</h2><br><br><br>
+        <!-- My Works And Services -->
+
+        <div class="container">
+          <div class="box" style="--clr:rgba(0, 247, 255, 0.75);">
+            <span style="--i:0"></span>
+            <span style="--i:1"></span>
+            <span style="--i:2"></span>
+            <span style="--i:3"></span>
+            <img src="./projects-cards/empops-logo.png">
+            <div class="content">
+              <h2>
+                Design
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dolorem at, commodi quisquam corporis
+                enim.
+              </p>
+              <a href="#">Read More</a>
+            </div>
+          </div><br>
+          <div class="box" style="--clr:rgba(0, 247, 255, 0.75);">
+            <span style="--i:0"></span>
+            <span style="--i:1"></span>
+            <span style="--i:2"></span>
+            <span style="--i:3"></span>
+            <img src="./projects-cards/empops-logo.png">
+            <div class="content">
+              <h2>
+                Design
+              </h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, optio aliquid voluptas placeat
+                cupiditate mollitia!
+              </p>
+              <a href="#">Read More</a>
+            </div>
+          </div><br>
+          <div class="box" style="--clr:rgba(0, 247, 255, 0.75);">
+            <span style="--i:0"></span>
+            <span style="--i:1"></span>
+            <span style="--i:2"></span>
+            <span style="--i:3"></span>
+            <img src="./projects-cards/empops-logo.png">
+            <div class="content">
+              <h2>
+                Code
+              </h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid natus nostrum iure, similique libero
+                eum?
+              </p>
+              <a href="#">Read More</a>
+            </div>
+          </div><br>
+          <div class="box" style="--clr:rgba(0, 247, 255, 0.75);">
+            <span style="--i:0"></span>
+            <span style="--i:1"></span>
+            <span style="--i:2"></span>
+            <span style="--i:3"></span>
+            <img src="./projects-cards/empops-logo.png">
+            <div class="content">
+              <h2>
+                Design
+              </h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt adipisci ut aliquid qui minus dolor.
+              </p>
+              <a href="#">Read More</a>
+            </div>
+          </div><br>
+        </div>
+      </div>
     </section>
 
+
+    <!--
+      - #Blog
+    -->
+    <!-- 
     <section id="blog" class="content-section">
-      <h2>Blog/Articles</h2>
-      <p>Sharing your thoughts, insights, or industry-related content through a blog section to showcase your knowledge
-        and passion.</p>
+      <div class="section-content">
+        <h2>Blog/Articles</h2>
+        <p>Sharing your thoughts, insights, or industry-related content through a blog section to showcase your
+          knowledge
+          and passion.</p>
+      </div>
+    </section> -->
+
+
+
+    <!--
+      - #resume
+    -->
+
+    <style>
+      /* CSS for Document Section */
+
+      #documents h2 {
+        color: aqua;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      /* Style for the document list */
+      .document-list {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      /* Style for each document item */
+      .document-list li {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+      }
+
+      /* Style for document links */
+      .document-list li a {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        background-color: #6670dd;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 6px;
+        transition: background-color 0.3s ease;
+        width: 80%;
+      }
+
+      /* Hover effect for document links */
+      .document-list li a:hover {
+        background-color: #5468d4;
+      }
+
+      /* Optional: Add spacing between links */
+      .document-list li a+a {
+        margin-top: 5px;
+      }
+
+      /* Style for pdf icon */
+      .document-list li .pdf-icon {
+        margin-right: 10px;
+        height: 80px;
+        width: auto;
+      }
+
+      /* Style for download icon */
+      .document-list li .download-icon {
+        align-self: flex-end; 
+        margin-left: 10px;
+        height: 50px;
+        width: auto;
+      }
+    </style>
+
+    <section id="documents" class="content-section">
+      <div class="section-content">
+        <h2>Documents</h2>
+        <ul class="document-list">
+          <li>
+            <a href="/path/to/portfolio.pdf" target="_blank">
+              <img src="pdf-icon.png" alt="PDF Icon" class="pdf-icon">
+              Portfolio
+              <img src="download-icon.png" alt="Download Icon" class="download-icon">
+            </a>
+          </li>
+          <li>
+            <a href="/path/to/resume.pdf" target="_blank">
+              <img src="pdf-icon.png" alt="PDF Icon" class="pdf-icon">
+              Resume
+              <img src="download-icon.png" alt="Download Icon" class="download-icon">
+            </a>
+          </li>
+          <li>
+            <a href="/path/to/cv.pdf" target="_blank">
+              <img src="pdf-icon.png" alt="PDF Icon" class="pdf-icon">
+              CV
+              <img src="download-icon.png" alt="Download Icon" class="download-icon">
+            </a>
+          </li>
+          <li>
+            <a href="/path/to/certifications.pdf" target="_blank">
+              <img src="pdf-icon.png" alt="PDF Icon" class="pdf-icon">
+              Certifications
+              <img src="download-icon.png" alt="Download Icon" class="download-icon">
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
 
-    <section id="social-media" class="content-section">
-      <h2>Social Media Links</h2>
-      <p>Connecting your website to your social media profiles, allowing visitors to explore more of your content and
-        stay connected.</p>
+    <!-- ... remaining code ... -->
+
+    <!-- ... remaining code ... -->
+
+
+    <!--
+      - #Contact Me
+    -->
+
+    <section id="contact-me" class="content-section">
+      <div class="section-content">
+        <h2>Contact Me</h2>
+        <div class="container">
+          <div class="contact-form">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button class="submit-btn">Send Message</button>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="resume" class="content-section">
-      <h2>Resume/CV</h2>
-      <p>Downloadable version of your resume or CV for interested parties to review your complete work history and
-        qualifications.</p>
-    </section>
+
+
+    <!--
+      - #footer
+    -->
+
+    <footer id="footer" class="content-section">
+      <div class="section-content">
+        <h2>Footer</h2>
+        <p>Gemechis Chala 2024</p>
+    </footer>
     <!-- <div id="coming-soon">
       <h3>In the meantime, remember this quote from Thomas
         Edison: <br><em>"Genius is one percent inspiration and ninety-nine percent perspiration." </em>
@@ -149,14 +589,33 @@
       <h3>Thank you!</h3>
     </div> -->
   </div>
-  <script src="script.js"></script>
+  </div>
 
-  <!-- For Nav Bar -->
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> -->
+  <!-- Scripts -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <script src="https://kit.fontawesome.com/your-fontawesome-kit-id.js" crossorigin="anonymous"></script>
+  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+  <!-- Contact Javascript File -->
+  <script src="mail/jqBootstrapValidation.min.js"></script>
+  <script src="mail/contact.js"></script>
+
+
+  <!-- JavaScript code -->
+  <!-- custom script -->
+  <script src="script.js"></script>
+  <!-- For Nav Bar -->
   <script src="navigation/script.js"></script>
   <!-- ------------------ ------------ -->
 </body>
