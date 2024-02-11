@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
 
+:root {
+  --primary-color: #0f1a8fd2;
+  --hover-color: #b4bdee;
+  --text-color: #fff;
+  --spacing-small: 10px;
+  --spacing-medium: 20px;
+  --spacing-large: 30px;
+  --font-family: 'Arial', sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,20 +22,27 @@ html {
   margin: 0;
   padding: 0;
   overflow: auto;
+  font-family: var(--font-family);
 }
+
 
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
-p {
+h6 {
   text-align: center;
   color: aqua;
   position: relative;
   z-index: 1;
-  /* Ensure h2 is above the background elements */
+}
+
+p{
+  color: #fff;
+  text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 #content-container {
@@ -43,7 +60,6 @@ p {
   height: 100%;
   background-color: #010115;
   z-index: -1;
-  /* Move the container behind other elements */
 }
 
 .firefly {
@@ -101,11 +117,10 @@ p {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background: radial-gradient(rgb(101, 87, 180), rgba(102, 89, 177, 0.521), transparent);
+  background: radial-gradient(rgba(101, 87, 180, 0.897), rgba(102, 89, 177, 0.521), transparent);
   filter: blur(30px);
   pointer-events: none;
   z-index: 0;
-  /* Move the cursor behind other elements */
   transition: 0.15s ease;
 }
 
@@ -118,90 +133,27 @@ p {
 
 
 
-
-/* Parallax Card Styles */
-.wrapper {
-  height: 100vh;
-  width: 100%;
-  background-color: #130042b0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.6s;
-  overflow: hidden;
-}
-
 /* 
-.wrapper:before {
-  content: "";
-  position: absolute;
-  left: var(--x);
-  top: var(--y);
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(
-    circle closest-side,
-    rgba(255, 255, 255, 0.5),
-    transparent
-  );
-  transform: translate(-50%, -50%) scale(var(--scale));
-  transition: transform 0.2s;
-} */
-
-.card {
-  width: 350px;
-  height: 350px;
-  margin: 0 20px;
-  background-color: rgba(216, 220, 255, 0.1);
-  color: #fff;
-  padding: 22px;
-  flex-shrink: 0;
-  text-shadow: 0 1px 0 #130042;
-  box-sizing: border-box;
-  border-radius: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* Added to vertically center the items */
-  pointer-events: none;
-  border: 1px solid rgba(171, 242, 255, 0.5);
-  box-shadow: 0 0 100px #130042;
-  transform: rotateX(var(--rotateX)) rotateY(var(--rotateY));
-}
-
-.card h4 {
-  font-family: "Space Mono", monospace;
-  font-size: 24px;
-}
-
-.card p {
-  color: white;
-}
-
-
-
-/* 
-  About Me Design 
+  Bio Design 
 */
-/* Add some padding and margin to the section */
-#about-me {
+#bio {
   padding: 80px 0;
   margin-bottom: 50px;
   background-color: #130042b0;
 }
 
 /* Center align the text in the section */
-#about-me h2 {
+#bio h2 {
   text-align: center;
 }
 
 /* Add some spacing between paragraphs */
-#about-me p {
+#bio p {
   margin-bottom: 20px;
 }
 
 /* Add a border and box shadow to the image */
-#about-me img {
+#bio img {
   border: 2px solid #ccc;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   max-width: 100%;
@@ -278,4 +230,200 @@ p {
 .contact-form textarea,
 .submit-btn {
   animation: fadeInUp 1s ease;
+}
+
+
+/*
+  Elevator Pitch Design
+*/
+#elevator-pitch {
+  padding: 50px;
+  text-align: center;
+}
+
+#elevator-pitch h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #0058cc;
+}
+
+.video-placeholder {
+  margin-bottom: 30px;
+}
+
+.video-placeholder iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+}
+
+#elevator-pitch p {
+  font-size: 18px;
+  color: #abd9ff;
+}
+
+
+/*
+  Testimonials Design
+*/
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--spacing-medium);
+  padding: var(--spacing-large);
+}
+
+.card {
+  align-items: center;
+  height: 300px;
+  flex: 1 0 200px;
+  margin: var(--spacing-small);
+  padding: var(--spacing-medium);
+  box-sizing: border-box;
+  transition: box-shadow 0.3s ease;
+  background-color: rgba(216, 220, 255, 0.1);
+  border: chocolate 2px solid;
+  border-radius: 8px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.testim-img {
+  border-radius: 50%;
+  width: 100px;
+  height: 105px;
+  margin-bottom: 10px;
+  padding-top: 5px;
+  object-fit: cover;
+}
+
+.card h4 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 650px) {
+  .card {
+    flex: 1 0 100%;
+  }
+}
+
+
+
+/* 
+  Documents Design
+*/
+#documents {
+  background-color: #130042b0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--spacing-large);
+}
+
+.section-content {
+  width: 100%;
+}
+
+.document-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-medium);
+  list-style-type: none;
+  padding: 0;
+}
+
+.document-list li {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border-radius: 20px;
+  padding: var(--spacing-medium);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.document-list li:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.document-list li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text-color);
+  text-decoration: none;
+  text-align: center;
+}
+
+.document-list li .pdf-icon,
+.document-list li .download-icon {
+  height: 50px;
+  width: auto;
+  margin: var(--spacing-small) 0;
+}
+
+.download-icon {
+  filter: invert(1);
+}
+
+@media (max-width: 600px) {
+  .document-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* 
+  Footer Design
+*/
+
+#footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 60px;
+  height: 60px; 
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border: 2px solid cyan;
+  border-radius: 50%; 
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-github {
+  background: #333333;
+  color: white;
+}
+
+.fa-telegram {
+  background: #0088cc;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
 }
