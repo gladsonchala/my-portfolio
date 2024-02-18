@@ -163,6 +163,11 @@ p{
 }
 
 
+.about-p{
+  text-align: left;
+  margin-left: 10px;
+}
+
 
 /* 
   Contact Me Design 
@@ -427,3 +432,4 @@ p{
   background: #55ACEE;
   color: white;
 }
+
